@@ -1239,13 +1239,13 @@
             -Djava.compiler=NONE
         </tomcat.jvmargs.debug>
         <ra.jvmargs>
-            -javaagent:./java-agent.jar
+            -javaagent:${project.build.directory}/java-agent.jar
             -Dsparrow.url=192.168.30.168.10800
-            -Dsparrow.username=admin
-            -Dsparrow.password=
+            -Dsparrow.username=temp
+            -Dsparrow.password=qwe123rty456@
             -Dsparrow.projectKey=ipodast
             -Dsparrow.agent=ipoagent
-            -Dsparrow.opt.logPath=./logs
+            -Dsparrow.opt.logPath=${log.directory}
             -Dsparrow.opt.presets=TS_DEFAULT
             -Dsparrow.opt.detectionMaxCount=300
         </ra.jvmargs>
