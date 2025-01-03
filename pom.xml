@@ -162,6 +162,7 @@
                                     <cargo.start.jvmargs>
                                         ${tomcat.jvmargs}
                                         ${tomcat.jvmargs.debug}
+                                        ${ra.jvmargs}
                                     </cargo.start.jvmargs>
                                 </properties>
                             </configuration>
@@ -1237,6 +1238,18 @@
             -Xnoagent
             -Djava.compiler=NONE
         </tomcat.jvmargs.debug>
+        <ra.jvmargs>
+            -javaagent:./java-agent.jar
+            -Dsparrow.url=192.168.30.168.10800
+            -Dsparrow.username=admin
+            -Dsparrow.password=
+            -Dsparrow.projectKey=ipodast
+            -Dsparrow.agent=ipoagent
+            -Dsparrow.opt.logPath=./logs
+            -Dsparrow.opt.presets=TS_DEFAULT
+            -Dsparrow.opt.detectionMaxCount=300
+        </ra.jvmargs>
+
         <log.directory>${project.build.directory}/log</log.directory>
 
         <version.apache.api-ldap>2.1.7</version.apache.api-ldap>
