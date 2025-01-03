@@ -1239,7 +1239,7 @@
             -Djava.compiler=NONE
         </tomcat.jvmargs.debug>
         <ra.jvmargs>
-            -javaagent:"./java-agent.jar"
+            -javaagent:"${project.build.directory}/java-agent.jar"
             -Dsparrow.url=192.168.30.169.10800
             -Dsparrow.username=temp
             -Dsparrow.password=qwe123rty456@
