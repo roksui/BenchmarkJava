@@ -1247,9 +1247,7 @@
             -Dsparrow.agent=ipoagent
             -Dsparrow.opt.logPath=${log.directory}
             -Dsparrow.opt.presets=TS_DEFAULT
-            -Dsparrow.opt.included=com.sun.org.apache.xpath.internal.jaxp.XPathImpl.compile(java.lang.String)
             -Dsparrow.opt.detectionMaxCount=300
-            -Dsparrow.opt.samplingPeriod=10
         </ra.jvmargs>
 
         <log.directory>${project.build.directory}/log</log.directory>
