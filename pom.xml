@@ -1240,10 +1240,10 @@
         </tomcat.jvmargs.debug>
         <ra.jvmargs>
             -javaagent:"/owasp/BenchmarkJava/java-agent.jar"
-            -Dsparrow.url=192.168.30.37:10800
+            -Dsparrow.url=192.168.30.169:10800
             -Dsparrow.username=admin
             -Dsparrow.password=1q2w3e!@#
-            -Dsparrow.projectKey=Small_DIPO
+            -Dsparrow.projectKey=IPODAST
             -Dsparrow.agent=ipoagent
             -Dsparrow.opt.logPath=${log.directory}
             -Dsparrow.opt.presets=TS_DEFAULT

@@ -23,12 +23,13 @@ RUN mvn install
 
 # Download, build BenchmarkJava
 WORKDIR /owasp
-RUN git clone https://github.com/OWASP-Benchmark/BenchmarkJava
-
+#RUN git clone https://github.com/OWASP-Benchmark/BenchmarkJava
+RUN git clone https://github.com/roksui/BenchmarkJava
 # Workaround for security fix for CVE-2022-24765
 RUN git config --global --add safe.directory /owasp/BenchmarkJava
 
 WORKDIR /owasp/BenchmarkJava
+COPY ./java-agent.jar .
 RUN mvn clean package cargo:install
 
 RUN useradd -d /home/bench -m -s /bin/bash bench 
